@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Barter Trader</string>
+    <string name="EMPTY_EMAIL_ADDRESS">Empty email address</string>
+    <string name="EMPTY_PASSWORD">Empty password</string>
+    <string name="INVALID_EMAIL">Invalid email</string>
+    <string name="INVALID_PASSWORD">Invalid password</string>
+    <string name="EMPTY_STRING"></string>
+    <string name="EMPTY_FIELDS">Empty fields</string>
+    <string name="EMPTY_POST_TITLE">Empty post title </string>
+    <string name="EMPTY_POST_DESCRIPTION">Empty post description </string>
+    <string name="EMPTY_POST_VALUE">Empty post value</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="post">Post</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="leftArrow"><![CDATA[<]]></string>
+    <string name="rightArrow"><![CDATA[>]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchlocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchLocationActivity">
+
+    <Button
+        android:id="@+id/searchLocationButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline_for_button_blue"
+        android:text="Search Location"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SendMessageButton" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_plus"
+        android:padding="10dp"
+        android:text="Post"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chatButton"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/primary_button_style"
+        android:drawableLeft="@drawable/ic_logout"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text=" Sign out"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_profile"
+        android:padding="10dp"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_message"
+        android:padding="10dp"
+        android:text="Messages"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRect"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect" />
+
+    <TextView
+        android:id="@+id/navbarRect"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_heart"
+        android:padding="10dp"
+        android:text="Favourites"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRect"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_home"
+        android:padding="10dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect" />
+
+    <Button
+        android:id="@+id/btnMakePayment"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/outline_for_button_blue"
+        android:text="Make a payment"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/SendMessageButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline_for_button_blue"
+        android:text="Send SMS Message"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMakePayment" />
+
+    <Button
+        android:id="@+id/ManagePostsButton"
+        android:layout_width="197dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline_for_button_blue"
+        android:text="Manage My Posts"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLocationButton" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginRight="233dp"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signOutButton" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:text="Email"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

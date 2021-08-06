@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainFeedActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="411dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/postButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/adImgView"
+            android:layout_width="409dp"
+            android:layout_height="293dp"
+            app:layout_constraintBottom_toTopOf="@+id/likeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postDescriptionTextView"
+            app:srcCompat="@drawable/ic_no_image" />
+
+        <TextView
+            android:id="@+id/postTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/postDescriptionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/postDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Description"
+            android:textColor="#3E3E3E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postTitleTextView" />
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:background="@drawable/outline_for_button_grey"
+            android:text="Like"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/messageButton"
+            app:layout_constraintTop_toBottomOf="@+id/postDescriptionTextView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/messageButton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/outline_for_button_grey"
+            android:text="Message"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/likeButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postDescriptionTextView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/postPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="$0"
+            android:textColor="#1976D2"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/messageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_plus"
+        android:padding="10dp"
+        android:text="Post"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect" />
+
+    <Button
+        android:id="@+id/nextPostButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:background="#FFFFFF"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/postButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/prevPostButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_left_arrow"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/postButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_profile"
+        android:padding="10dp"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/navbarRect"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_heart"
+        android:padding="10dp"
+        android:text="Favourites"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRect"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="83dp"
+        android:layout_height="76dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_home"
+        android:padding="10dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:drawableTop="@drawable/ic_message"
+        android:padding="10dp"
+        android:text="Message"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintTop_toTopOf="@+id/navbarRect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/searchPostsInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Search Posts"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/searchPostsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchPostsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:drawableBottom="@drawable/ic_search"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchPostsInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
